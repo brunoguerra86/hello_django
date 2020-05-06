@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/<nome>/', views.hello),
     path('hello/', views.hello2),
-    path('', views.hello2)
+    path('', views.hello2),
+    path('<operacao>/<num1>/<num2>', views.conta)
 ]
